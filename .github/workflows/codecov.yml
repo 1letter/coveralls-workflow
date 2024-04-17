@@ -1,6 +1,6 @@
 # Workflow meant to be used by external repositories
 # that are configured with this `meta` repository
-name: Coveralls
+name: Codecov
 on:
   # allow this workflow to be called
   # by other workflows from other repositories
@@ -12,7 +12,7 @@ on:
 
 jobs:
   coveralls:
-    name: Coveralls
+    name: Codecov
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
